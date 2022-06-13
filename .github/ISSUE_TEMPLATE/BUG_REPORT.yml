@@ -1,0 +1,69 @@
+name: Bug Report
+description: Create a report to help us improve
+title: " "
+labels: ['type:Bug', 'status:Unconfirmed']
+body:
+  - type: textarea
+    id: "summary"
+    attributes:
+      label: Issue summary
+      description: "A brief summary of the issue"
+    validations:
+      required: true
+  - type: textarea
+    id: "steps"
+    attributes:
+      label: "Steps to reproduce"
+      value: |
+        1. Step 1
+        2. Step 2
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: "version-pyth"
+    attributes:
+      label: "Python version"
+      description: "Execute python --version"
+      placeholder: "Execute python --version"
+    validations:
+      required: true
+  - type: input
+    id: "version-django"
+    attributes:
+      label: "Django version"
+      description: "Execute pip show django \| grep Version"
+      placeholder: "Execute pip show django \| grep Version"
+    validations:
+      required: true
+  - type: input
+    id: "version-node"
+    attributes:
+      label: "Node version"
+      description: "Execute node -v"
+      placeholder: "Execute node -v"
+    validations:
+      required: true
+  - type: input
+    id: "version-react"
+    attributes:
+      label: "React version"
+      description: "Execute npm view react version"
+      placeholder: "Execute npm view react version"
+    validations:
+      required: true
+  - type: input
+    id: "browser-version"
+    attributes:
+      label: "Browser version"
+      description: "The version of your browser."
+      placeholder: "Google Chrome 93"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+    description: "You can use [whatsmybrowser](https://www.whatsmybrowser.org/) to find this out."
+      options:
+        - label: "I have confirmed that this issue can be reproduced as described on a fresh gymkhana project"
+"
