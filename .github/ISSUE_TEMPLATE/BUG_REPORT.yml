@@ -40,13 +40,13 @@ body:
     id: browser-version
     attributes:
       label: Browser version
-      description: The version of your browser.
+      description: You can use [whatsmybrowser](https://www.whatsmybrowser.org/) to find this out.
       placeholder: Google Chrome 93
 
   - type: checkboxes
     id: terms
     attributes:
-      description: You can use [whatsmybrowser](https://www.whatsmybrowser.org/) to find this out.
+      label: Terms
       options:
         - label: I have confirmed that this issue can be reproduced as described on a fresh gymkhana project.
 
