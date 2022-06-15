@@ -1,69 +1,56 @@
 name: Bug Report
 description: Create a report to help us improve
-title: " "
-labels: ['type:Bug', 'status:Unconfirmed']
+labels: ['bug', 'unconfirmed']
 body:
   - type: textarea
-    id: "summary"
+    id: summary
     attributes:
       label: Issue summary
-      description: "A brief summary of the issue"
+      description: A brief summary of the issue
     validations:
       required: true
+
   - type: textarea
-    id: "steps"
+    id: steps
     attributes:
-      label: "Steps to reproduce"
+      label: Steps to reproduce
       value: |
         1. Step 1
         2. Step 2
         3. ...
-    validations:
-      required: true
-  - type: input
-    id: "version-pyth"
+
+  - type: textarea
+    id: versions
     attributes:
-      label: "Python version"
-      description: "Execute python --version"
-      placeholder: "Execute python --version"
-    validations:
-      required: true
+    label: Versions
+    description: |
+      Execute:
+        - Python: python --version
+        - Django: pip show django | grep Version
+        - Node: node -v
+        - React: npm view react version
+    value: |
+        - Python:
+        - Django:
+        - Node:
+        - React:
+    render: markdown
+
   - type: input
-    id: "version-django"
+    id: browser-version
     attributes:
-      label: "Django version"
-      description: "Execute pip show django \| grep Version"
-      placeholder: "Execute pip show django \| grep Version"
-    validations:
-      required: true
-  - type: input
-    id: "version-node"
-    attributes:
-      label: "Node version"
-      description: "Execute node -v"
-      placeholder: "Execute node -v"
-    validations:
-      required: true
-  - type: input
-    id: "version-react"
-    attributes:
-      label: "React version"
-      description: "Execute npm view react version"
-      placeholder: "Execute npm view react version"
-    validations:
-      required: true
-  - type: input
-    id: "browser-version"
-    attributes:
-      label: "Browser version"
-      description: "The version of your browser."
-      placeholder: "Google Chrome 93"
-    validations:
-      required: true
+      label: Browser version
+      description: The version of your browser.
+      placeholder: Google Chrome 93
+
   - type: checkboxes
     id: terms
     attributes:
-    description: "You can use [whatsmybrowser](https://www.whatsmybrowser.org/) to find this out."
+    description: You can use [whatsmybrowser](https://www.whatsmybrowser.org/) to find this out.
       options:
-        - label: "I have confirmed that this issue can be reproduced as described on a fresh gymkhana project"
-"
+        - label: I have confirmed that this issue can be reproduced as described on a fresh gymkhana project.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Any other relevant information?
