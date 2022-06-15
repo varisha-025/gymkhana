@@ -22,19 +22,19 @@ body:
   - type: textarea
     id: versions
     attributes:
-    label: Versions
-    description: |
-      Execute:
-        - Python: python --version
-        - Django: pip show django | grep Version
-        - Node: node -v
-        - React: npm view react version
-    value: |
-        - Python:
-        - Django:
-        - Node:
-        - React:
-    render: markdown
+      label: Versions
+      description: |
+        Execute:
+          - Python: python --version
+          - Django: pip show django | grep Version
+          - Node: node -v
+          - React: npm view react version
+      value: |
+          - Python:
+          - Django:
+          - Node:
+          - React:
+      render: markdown
 
   - type: input
     id: browser-version
