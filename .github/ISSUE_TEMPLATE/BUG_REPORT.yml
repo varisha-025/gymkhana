@@ -30,6 +30,7 @@ body:
           - Node: node -v
           - React: npm view react version
           - Browser: Use [whatsmybrowser](https://www.whatsmybrowser.org/) to find out
+
       value: |
           - Python:
           - Django:
@@ -37,8 +38,7 @@ body:
           - React:
           - Browser:
       render: markdown
-
-
+      
       
   - type: checkboxes
     id: terms
