@@ -37,8 +37,7 @@ body:
           - React:
           - Browser:
       render: markdown
-
-
+      
       
   - type: checkboxes
     id: terms
@@ -51,3 +50,5 @@ body:
     id: additional
     attributes:
       label: Any other relevant information?
+      
+

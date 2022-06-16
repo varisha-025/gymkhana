@@ -21,6 +21,7 @@ body:
         - something that can be modified in the existing docs to make it better, or
         - a request for a new documentation?
 
+
   - type: input
     id: newdoc
     attributes:
@@ -37,5 +38,3 @@ body:
     attributes:
       label: Any other relevant information?
       description: Any other relevant information you'd like to share with us?
-
-  
